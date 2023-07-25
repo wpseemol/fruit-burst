@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* created tailwind-css some cleass grop  */
+@layer base {
+    :root {
+        --primary-color: #F85559;
+      }
+}
+
+
+
+ @layer components {
+    
+  
+  }

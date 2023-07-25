@@ -3,8 +3,13 @@ module.exports = {
   content: ["../*"],
   theme: {
     extend: {},
+    colors: {
+      "site-primary-color": "--primary-color"
+    },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"),
+           'tailwindcss',
+    ],
   daisyui: {
     themes: [
       "light",
