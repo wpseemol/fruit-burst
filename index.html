@@ -1,19 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="cupcake">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google Lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.mini.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <title>Fruit Burst</title>
 </head>
-<body>
-    <header class="container xl:container lg:container md:container smcontainer mx-auto">
-        <nav>
-            
-        </nav>
 
+<body class="my-site-font-family text-base">
+    <header class="container xl:container lg:container md:container smcontainer mx-auto">
+        <!-- navigtion bar -->
+        <nav class="flex justify-between 
+        items-center capitalize px-12 py-10
+        bg-site-primary-color my-12 rounded-full
+        text-base-100 flex-row-reverse lg:flex-row
+            
+        ">
+            <ul class="hidden lg:flex items-center text-[18px] gap-9 font-medium">
+                <li class="p-2 "><a class="" href="">home</a></li>
+                <li class="p-2"><a href="">about us</a></li>
+                <li class="p-2"><a href="">shop</a></li>
+                <li class="p-2"><a href="">all fruits</a></li>
+
+
+            </ul>
+
+            <div class="dropdown lg:hidden">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <div><i class="fa-solid fa-bars"></i></div>
+
+                </label>
+                <ul tabindex="0" class="menu dropdown-content mt-3 z-[1] bg-site-primary-color rounded-box w-65">
+                    <li class="p-2 "><a class="" href="">home</a></li>
+                    <li class="p-2"><a href="">about us</a></li>
+                    <li class="p-2"><a href="">shop</a></li>
+                    <li class="p-2"><a href="">all fruits</a></li>
+                </ul>
+            </div>
+
+
+            <div class="flex justify-center 
+            items-center lg:font-bold font-semibold font-[20px]
+            lg:text-[40px]  gap-5">
+                <img src="./images/logo.png" alt="Site Logo">
+                <h2>Fruit Burst</h2>
+            </div>
+
+            <div class="relative hidden lg:block text-neutral-600">
+                <input class="lg:w-search-box-width
+                 py-5 px-7 
+                 rounded-full font-2xl focus:outline-none " type="text" placeholder="Search here">
+                <div class="absolute right-8 bottom-5 text-[#121212]">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+        </nav>
     </header>
 
-    
+
+
+
 </body>
+
 </html>

@@ -4,12 +4,11 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      "site-primary-color": "--primary-color"
+      "site-primary-color": "#F85559",
+      
     },
   },
-  plugins: [require("daisyui"),
-           'tailwindcss',
-    ],
+  plugins: [require("daisyui")],
   daisyui: {
     themes: [
       "light",
@@ -44,3 +43,4 @@ module.exports = {
     ],
   },
 }
+
