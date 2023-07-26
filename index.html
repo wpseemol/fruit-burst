@@ -24,8 +24,8 @@
         <!-- navigtion bar -->
         <nav class="flex justify-between 
         items-center capitalize px-12 py-10
-        bg-site-primary-color my-12 rounded-full
-        text-base-100 flex-row-reverse lg:flex-row
+        lg:bg-site-primary-color my-12 rounded-full
+        lg:text-base-100 flex-row-reverse lg:flex-row
             
         ">
             <ul class="hidden lg:flex items-center text-[18px] gap-9 font-medium">
@@ -38,15 +38,16 @@
             </ul>
 
             <div class="dropdown lg:hidden">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
+                <label tabindex="0" class="btn bg-transparent">
                     <div><i class="fa-solid fa-bars"></i></div>
 
                 </label>
-                <ul tabindex="0" class="menu dropdown-content mt-3 z-[1] bg-site-primary-color rounded-box w-65">
-                    <li class="p-2 "><a class="" href="">home</a></li>
-                    <li class="p-2"><a href="">about us</a></li>
-                    <li class="p-2"><a href="">shop</a></li>
-                    <li class="p-2"><a href="">all fruits</a></li>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 right-0 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li class=" "><a class="" href="">home</a></li>
+                    <li class=""><a href="">about us</a></li>
+                    <li class=""><a href="">shop</a></li>
+                    <li class=""><a href="">all fruits</a></li>
                 </ul>
             </div>
 
@@ -59,7 +60,8 @@
             </div>
 
             <div class="relative hidden lg:block text-neutral-600">
-                <input class="lg:w-search-box-width
+                <input class="xl:w-[400px]
+                lg:w-[250px]
                  py-5 px-7 
                  rounded-full font-2xl focus:outline-none " type="text" placeholder="Search here">
                 <div class="absolute right-8 bottom-5 text-[#121212]">
@@ -69,6 +71,125 @@
 
         </nav>
     </header>
+
+    <main class="container xl:container lg:container md:container smcontainer mx-auto">
+        <section class="carousel w-full">
+            <!-- slider 1 -->
+            <div id="slide1" class="carousel-item relative w-full lg:h-[600px] h-[500px]">
+                <!-- hero section slider element -->
+                <div class="hero bg-[url('./images/banner1.png')]">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div>
+                            <h1 class="mb-5 lg:lg:text-7xl text-5xl text-5xl font-bold">Exotic tastes at your <br>
+                                doorstep</h1>
+                            <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                            <!-- primary btton -->
+                            <button class="px-[30px] py-5 bg-site-primary-color 
+                        rounded-lg text-xl font-bold">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="flex justify-center
+                items-center text-xl bg-slider-btn-bg w-12 
+                h-12 rounded-full text-base-100">❮</a>
+                    <a href="#slide2" class="flex justify-center items-center 
+                text-xl bg-slider-btn-bg w-12 h-12 
+                rounded-full text-base-100">❯</a>
+                </div>
+            </div>
+
+            <div id="slide2" class="carousel-item relative w-full lg:h-[600px] h-[500px]">
+                <!-- slider 2 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <!-- hero section slider element -->
+                    <div class="hero bg-[url('./images/banner2.png')]">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div>
+                                <h1 class="mb-5 lg:text-7xl text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                <!-- primary btton -->
+                                <button class="px-[30px] py-5 bg-site-primary-color 
+                          rounded-lg text-xl font-bold">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="flex justify-center items-center 
+                text-xl bg-slider-btn-bg w-12 h-12 
+                rounded-full text-base-100">❮</a>
+                        <a href="#slide3" class="flex justify-center items-center 
+                text-xl bg-slider-btn-bg w-12 h-12 
+                rounded-full text-base-100">❯</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="slide3" class="carousel-item relative w-full">
+                <!-- slider 3 -->
+                <div id="slide1" class="carousel-item relative w-full lg:h-[600px] h-[500px]">
+                    <!-- hero section slider element -->
+                    <div class="hero bg-[url('./images/banner3.png')]">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div>
+                                <h1 class="mb-5 lg:text-7xl text-5xl font-bold">Exotic tastes at your <br> doorstep
+                                </h1>
+                                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                <!-- primary btton -->
+                                <button class="px-[30px] py-5 bg-site-primary-color 
+                          rounded-lg text-xl font-bold">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="flex justify-center items-center 
+                text-xl bg-slider-btn-bg w-12 h-12 
+                rounded-full text-base-100">❮</a>
+                        <a href="#slide4" class="flex justify-center items-center 
+                text-xl bg-slider-btn-bg w-12 h-12 
+                rounded-full text-base-100">❯</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="slide4" class="carousel-item relative w-full lg:h-[600px] h-[500px]">
+                <!-- slider 4 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <!-- hero section slider element -->
+                    <div class="hero bg-[url('./images/banner4.png')]">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div>
+                                <h1 class="mb-5 lg:text-7xl text-5xl font-bold">Exotic tastes at your <br>
+                                    doorstep</h1>
+                                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                <!-- primary btton -->
+                                <button class="px-[30px] py-5 bg-site-primary-color 
+                          rounded-lg text-xl font-bold">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="flex justify-center items-center 
+                text-xl bg-slider-btn-bg w-12 h-12 
+                rounded-full text-base-100">❮</a>
+                        <a href="#slide1" class="flex justify-center items-center 
+                text-xl bg-slider-btn-bg w-12 h-12 
+                rounded-full text-base-100">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- more foreat section -->
+
+        </section>
+    </main>
 
 
 
