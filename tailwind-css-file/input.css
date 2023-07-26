@@ -4,5 +4,10 @@
 
 
 
-   
+@layer base {
+    :root {
+      --sligied-gray: rgba(18, 18, 18, 0.80);;
+      
+    }
+  }
   

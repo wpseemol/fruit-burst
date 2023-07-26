@@ -5,7 +5,8 @@ module.exports = {
     extend: {},
     colors: {
       "site-primary-color": "#F85559",
-      "slider-btn-bg": "#121212"
+      "slider-btn-bg": "#121212",
+      "slider-gray": "var(--sligied-gray)",
     },
   },
   plugins: [require("daisyui")],
