@@ -7,6 +7,8 @@ module.exports = {
       "site-primary-color": "#F85559",
       "slider-btn-bg": "#121212",
       "slider-gray": "var(--sligied-gray)",
+      "title-color": "#121212",
+      "devider-boder": "var(--divider-boder)",
     },
   },
   plugins: [require("daisyui")],

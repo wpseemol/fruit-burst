@@ -6,7 +6,8 @@
 
 @layer base {
     :root {
-      --sligied-gray: rgba(18, 18, 18, 0.80);;
+      --sligied-gray: rgba(18, 18, 18, 0.80);
+      --divider-boder: rgba(18, 18, 18, 0.10);
       
     }
   }

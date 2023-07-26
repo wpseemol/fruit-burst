@@ -73,7 +73,7 @@
         </nav>
     </header>
 
-    <main class="container xl:container lg:container md:container smcontainer mx-auto">
+    <main class="container xl:container lg:container md:container sm:container mx-auto">
         <section class="mt-6">
             <div class="carousel w-full">
                 <!-- slider 1 -->
@@ -218,42 +218,441 @@
         </section>
 
         <!-- product and retting section -->
-        <section>
-            <div>
-                <div class="fixed justify-between aitems-center">
-                    <h2>Deal of the day</h2>
-                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        <section class="mb-32">
+            <div class="flex lg:flex-row flex-col items-center lg:items-start justify-between ">
+                <div class="xl:w-1/2">
+                    <h2 class="text-5xl font-extrabold text-title-color  mb-6">Deal of the day</h2>
+                    <p class="font-medium xl:pr-[7.5rem] lg:pr-1">Contrary to popular belief, is not simply random text. It has
+                        roots in a
+                        piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
 
-                <div>
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                        <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl">
-                            <span style="--value:15;"></span>
-                          </span>
-                          days
-                        </div> 
-                        <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl">
-                            <span style="--value:10;"></span>
-                          </span>
-                          hours
-                        </div> 
-                        <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl">
-                            <span style="--value:24;"></span>
-                          </span>
-                          min
-                        </div> 
-                        <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl">
-                            <span style="--value:16;"></span>
-                          </span>
-                          sec
+                <div class="py-10 lg:py-0">
+                    <!-- animsson colock -->
+                    <div class="grid grid-flow-col capitalize -mt-0  gap-5 auto-cols-max">
+                        <div class="relative flex flex-col">
+                            <span class="absolute right-0 -top-1 w-4 h-4  bg-[#faf7f5]"></span>
+                            <span class="countdown text-5xl font-extrabold border-dotted pr-5 border-r-8 mb-6">
+                                <span style="--value:15;"></span>
+                            </span>
+                            <span></span>
+                            <p class="font-medium">days</p>
                         </div>
-                      </div>
+                        <div class="relative flex flex-col">
+                            <span class="absolute right-0 -top-1 w-4 h-4   bg-[#faf7f5]"></span>
+                            <span class="countdown text-5xl font-extrabold border-dotted pr-5 border-r-8 mb-6">
+                                <span style="--value:10;"></span>
+                            </span>
+                            <p class="font-medium">hours</p>
+                        </div>
+                        <div class="relative flex flex-col">
+                            <span class="absolute right-0 -top-1 w-4 h-4  bg-[#faf7f5]"></span>
+                            <span class="countdown text-5xl font-extrabold border-dotted pr-5 border-r-8 mb-6">
+                                <span style="--value:24;"></span>
+                            </span>
+                            <p class="font-medium">Minutes</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown text-5xl font-extrabold mb-6">
+                                <span style="--value:16;"></span>
+                            </span>
+                            <p class="font-medium">Seconds</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <!-- pridutc section -->
+            <div class="md:flex md:flex-wrap md:mx-8 justify-center gap-6 items-center my-14">
+
+                <div class="card w-80 md:w-fit mx-auto border border-devider-boder shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="Apples" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+
+                        <h2 class="card-title text-2xl pb-4 px-10 border-b-2 border-devider-boder">12.90$ - 18.85$</h2>
+
+                        <p class="font-medium">Apples</p>
+
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div class="card-actions px-10">
+                            <a href="#my_modal_1" class="text-lg text-site-primary-color font-bold">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card w-80 md:w-fit mx-auto  my-10 border border-devider-boder shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit7.png" alt="Orange" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+
+                        <h2 class="card-title text-2xl pb-4 px-10 border-b-2 border-devider-boder">12.90$ - 18.85$</h2>
+
+                        <p class="font-medium">Orange</p>
+
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div class="card-actions px-10">
+                            <a href="#my_modal_2" class="text-lg text-site-primary-color font-bold">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-80 md:w-fit mx-auto my-10 border border-devider-boder shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit8.png" alt="Red Dragon" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+
+                        <h2 class="card-title text-2xl pb-4 px-10 border-b-2 border-devider-boder">12.90$ - 18.85$</h2>
+
+                        <p class="font-medium">Red Dragon</p>
+
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div class="card-actions px-10">
+                            <a href="#my_modal_3" class="text-lg text-site-primary-color font-bold">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card w-80 md:w-fit mx-auto my-10 border border-devider-boder shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" alt="Banana" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+
+                        <h2 class="card-title text-2xl pb-4 px-10 border-b-2 border-devider-boder">12.90$ - 18.85$</h2>
+
+                        <p class="font-medium">Banana</p>
+
+                        <div class="rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" checked />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10"
+                                class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                        </div>
+
+                        <div class="card-actions px-10 ">
+                            <a href="#my_modal_4" class="text-lg text-site-primary-color font-bold ">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Put this part before tag -->
+            <!-- this is model 1 -->
+            <div class="modal" id="my_modal_1">
+                <div class="modal-box">
+                    <div class="">
+                        <figure class="px-10 pt-10 flex justify-center">
+                            <img src="./images/fruit6.png" alt="Apples" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+
+                            <h2 class="card-title text-2xl pb-4 px-10 border-b-2 border-devider-boder">12.90$ - 18.85$
+                            </h2>
+
+                            <p class="font-medium">Apples</p>
+
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            </div>
+
+                            <div class="card-actions mt-10 ">
+                                <a href="#" class="px-[30px] border border-t-site-primary-color py-5 text-site-primary-color
+                                rounded-lg text-xl font-bold mr-2">Close</a> <a href="" class=" ml-2 px-[30px] text-base-100 py-5 
+                                bg-site-primary-color 
+                                rounded-lg text-xl font-bold">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-action">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Put this part before tag -->
+            <!-- this is model 2 -->
+            <div class="modal" id="my_modal_2">
+                <div class="modal-box">
+                    <div class="">
+                        <figure class="px-10 pt-10 flex justify-center">
+                            <img src="./images/fruit7.png" alt="Orange" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+
+                            <h2 class="card-title text-2xl pb-4 px-10 border-b-2 border-devider-boder">12.90$ - 18.85$
+                            </h2>
+
+                            <p class="font-medium">Orange</p>
+
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            </div>
+
+                            <div class="card-actions mt-10 ">
+                                <a href="#" class="px-[30px] border border-t-site-primary-color py-5 text-site-primary-color
+                                rounded-lg text-xl font-bold mr-2">Close</a> <a href="" class=" ml-2 px-[30px] text-base-100 py-5 
+                                bg-site-primary-color 
+                                rounded-lg text-xl font-bold">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-action">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Put this part before tag -->
+            <!-- this is model 3 -->
+            <div class="modal" id="my_modal_3">
+                <div class="modal-box">
+                    <div class="">
+                        <figure class="px-10 pt-10 flex justify-center">
+                            <img src="./images/fruit8.png" alt="Red Dragon" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+
+                            <h2 class="card-title text-2xl pb-4 px-10 border-b-2 border-devider-boder">12.90$ - 18.85$
+                            </h2>
+
+                            <p class="font-medium">Red Dragon</p>
+
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            </div>
+
+                            <div class="card-actions mt-10 ">
+                                <a href="#" class="px-[30px] border border-t-site-primary-color py-5 text-site-primary-color
+                                rounded-lg text-xl font-bold mr-2">Close</a> <a href="" class=" ml-2 px-[30px] text-base-100 py-5 
+                                bg-site-primary-color 
+                                rounded-lg text-xl font-bold">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-action">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Put this part before tag -->
+            <!-- this is model 4 -->
+            <div class="modal" id="my_modal_4">
+                <div class="modal-box">
+                    <div class="">
+                        <figure class="px-10 pt-10 flex justify-center">
+                            <img src="./images/fruit9.png" alt="Banana" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+
+                            <h2 class="card-title text-2xl pb-4 px-10 border-b-2 border-devider-boder">12.90$ - 18.85$
+                            </h2>
+
+                            <p class="font-medium">Banana</p>
+
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-site-primary-color mask mask-star-2 mask-half-2" />
+                            </div>
+
+                            <div class="card-actions mt-10 ">
+                                <a href="#" class="px-[30px] border border-t-site-primary-color py-5 text-site-primary-color
+                                rounded-lg text-xl font-bold mr-2">Close</a> <a href="" class=" ml-2 px-[30px] text-base-100 py-5 
+                                bg-site-primary-color 
+                                rounded-lg text-xl font-bold">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-action">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="flex justify-center items-center">
+                <button class="px-[30px] text-base-100 py-5 bg-site-primary-color 
+                          rounded-lg text-xl font-bold">Shop All</button>
+            </div>
+
+
+
+
+
+
         </section>
 
     </main>
